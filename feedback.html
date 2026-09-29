@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Зворотній зв'язок - Адміністрація села Трубне</title>
+</head>
+<body>
+
+    <header>
+        <img src="img/gerb.jpe" alt="Герб села Трубне" width="120">
+        <h1>Адміністрація села Трубне</h1>
+        <p><button type="button" onclick="location.href='index.html'">На Головну сторінку</button></p>
+    </header>
+
+    <main>
+        <h2>Електронне звернення громадян</h2>
+
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Персональна інформація</legend>
+                
+                <p>
+                    <label for="fullname">Прізвище та ім'я:</label><br>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Наприклад: Коваленко Петро">
+                </p>
+
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="name@domain.com">
+                </p>
+
+                <p>
+                    <label for="age">Вік:</label><br>
+                    <input type="number" id="age" name="age" min="18" max="110" required placeholder="18">
+                </p>
+
+                <p>
+                    <label for="education">Освіта:</label><br>
+                    <select id="education" name="education" required>
+                        <option value="">-- Оберіть рівень освіти --</option>
+                        <option value="incomplete">неповна</option>
+                        <option value="complete">повна</option>
+                        <option value="vocational">професійна</option>
+                        <option value="higher">вища</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="purpose">Мета зворотнього зв'язку:</label><br>
+                <select id="purpose" name="purpose" required>
+                    <option value="cooperation">співпраця</option>
+                    <option value="property_violation">скарга на порушення права власності</option>
+                    <option value="proposal">пропозиція</option>
+                    <option value="bug_report">наявність помилки</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="details">Детально:</label><br>
+                <textarea id="details" name="details" rows="7" cols="100" maxlength="600" placeholder="Викладіть суть питання (обмеження: до 600 символів)..." required></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" id="user-consent" name="user_consent" required>
+                <label for="user-consent">Я надаю згоду на збір та обробку моїх персональних даних відповідно до законодавства України</label>
+            </p>
+
+            <p>
+                <input type="submit" value="Надіслати звернення">
+                <input type="reset" value="Скинути форму">
+            </p>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Адміністрація села Трубне</p>
+    </footer>
+
+</body>
+</html>
